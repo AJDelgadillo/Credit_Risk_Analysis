@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 # Overview of the loan prediction risk analysis:
-## Purpose
+### Purpose
 The purpose of this challenge was to use resampling methods to alter an unbalanced dataset with the goal of creating a more reliable machine learning model. 
 
 Our dataset classifies datapoints as being either high-risk or low-risk credit loans. In our original dataset the low-risk loans greatly outnumber the high-risk loans. This skew in the dataset target results could cause skewness in future predictions using this model. The model may favor the low-risk classification and wrongfully classify high-risk loans as “low risk.” To correct this issue we need to resample the dataset so the two classification counts are more even. 
