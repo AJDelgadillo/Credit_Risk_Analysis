@@ -59,3 +59,20 @@ After applying each resample technique we observed the balanced accuracy, precis
 * In the image below we can see that this model has a precision score of 0.99 and a recall score of 0.94.
 
 ![EasyEnsembleClassifier_results.png](Resources/EasyEnsembleClassifier_results.png)
+
+
+# Summary:
+### Summary of results
+
+The results of the first four resampling techniques show balanced accuracy scores very close in range. RandomOverSampler, SMOTE, ClusterCentroids, and SMOTEENN have accuracy scores of 0.65, 0.66, 0.54, and 0.54, respectively. The last two techniques, BalancedRandomForestClassifier and EasyEnsembleClassifier have rather high accuracy scores. BalancedRandomForestClassifier has an accuracy score of 0.75 and EasyEnsembleClassifier has the highest accuracy score, 0.91.
+
+All six resampling methods yields a model with a very high precision score of 0.99. 
+However, we are most concerned with the recall scores of each model. 
+
+The resampling technique that resulted in the lowest recall score was the ClusterCentroids method, with has a recall score of 0.40. RandomOverSampler, SMOTE, and SMOTEENN have fairly close recall scores; 0.59, 0.69, and 0.61, respectively. The two ensemble techniques, BalancedRandomForestClassifier and EasyEnsembleClassifier both resulted in very high recall scores; 0.89 and 0.91, respectively. 
+
+### Recommendation
+
+After testing and observing the results of all six resampling models I would suggest that the lending services company utilize the EasyEnsembleClassifier method. This method yielded the highest recall score, 0.91. This suggests that the model has very high sensitivity and can accurately identify the correct classification for each datapoint. 
+
+Although I would be wary that this model might be showing signs of overfitting due to the very high accuracy score of 0.91, I would still recommend that the company uses this method rather than the others. It is more beneficial to be overly cautious in this analysis; since the amount of high-risk datapoints are so low we are more at risk of not catching those high-risk samples than incorrectly flagging the low-risk samples. 
