@@ -73,6 +73,6 @@ The resampling technique that resulted in the lowest recall score was the Cluste
 
 ### Recommendation
 
-After testing and observing the results of all six resampling models I would suggest that the lending services company utilize the EasyEnsembleClassifier method. This method yielded the highest recall score, 0.91. This suggests that the model has very high sensitivity and can accurately identify the correct classification for each datapoint. 
+After testing and observing the results of all six resampling models I would suggest that the lending services company utilize the EasyEnsembleClassifier method. This method yielded the highest recall score, 0.94. This suggests that the model has very high sensitivity and can accurately identify the correct classification for each datapoint. 
 
 Although I would be wary that this model might be showing signs of overfitting due to the very high accuracy score of 0.91, I would still recommend that the company uses this method rather than the others. It is more beneficial to be overly cautious in this analysis; since the amount of high-risk datapoints are so low we are more at risk of not catching those high-risk samples than incorrectly flagging the low-risk samples. 
